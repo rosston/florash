@@ -194,7 +194,7 @@
         var shrink = size / this.shapes.length;
         for (var i = 0, l = this.shapes.length; i < l; i++) {
             var shape = this.shapes[i];
-            context.drawImage(shape.toImage(), offset, offset, size, size);
+            context.drawImage(shape.toCanvas(), offset, offset, size, size);
             size -= shrink;
             offset += Math.floor((shrink / 2));
         }
